@@ -10,7 +10,7 @@ int main(){
     std::cout<<"fValue : "<<fValue<<std::endl;
     std::cout<<"dValue : "<<dValue<<std::endl;
 
-    std::cout<<"\n----------------------\n";
+    std::cout<<"----------------------\n";
 
     int i=3000;
     char c=i;
@@ -26,4 +26,22 @@ int main(){
 
     //부동 소수점 숫자에서 정수로 변환하는 것은 분수 값을 모두 손실시킨다.
     std::cout<<"3.14 : "<<num<<std::endl;
+
+
+    // 피연산자의 자료형이 int보다 작은 정수인 경우, int또는 unsigned int로 승격된다.
+    // 피연산자의 자료형이 여전히 같지 않으면, 컴파일러는 가장 높은 우선순위 피연산자를 찾고 다른 피연산자를 암시적 형 변환을 통해 일치시킨다.
+    
+    
+    
+    // 피연산자의 우선순위는 다음과 같다.
+
+    // 1. long double (highest)
+    // 2. double
+    // 3. float
+    // 4. unsigned long long
+    // 5. long long
+    // 6. unsigned long
+    // 7. long
+    // 8. unsigned int
+    // 9. int (lowest)
 }
