@@ -22,6 +22,7 @@ int main(){
     // 두 가지 모두 특정 문제를 풀 수 있다면 Reference를 사용하는 것이 더 안전하다
 
 
+
     std::cout<<"value : "<<value<<std::endl;
     std::cout<<"ref : "<<ref<<std::endl;
 
@@ -29,7 +30,9 @@ int main(){
     ref=30; //value=30과 동일
     std::cout<<"ref=30 : "<<ref<<std::endl;
 
+
     std::cout<<"--------------------------"<<std::endl;
+
 
     int value2=123;
 
