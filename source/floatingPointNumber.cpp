@@ -11,6 +11,9 @@ int main()
 
     std::cout<<"--------------------------------"<<std::endl;
 
+
+    //값을 초기화 할 때 f를 붙이지 않을 시 doble로 간주된다.
+    //변수 type을 따로 지정하지 않는 python 등과 같은 언어에서 특히 치명적
     float fValue{123456789.0f};
     double dValue{123456789.0};
 
