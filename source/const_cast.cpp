@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int main(){
     //명시적 형변환
@@ -12,13 +11,13 @@ int main(){
 
     const char str[]="Cpp is programming language!!";
     const char* ptr=str;
-    cout<<"before : "<<str<<endl;
+    std::cout<<"before : "<<str<<std::endl;
 
     // ptr[0]="A;" //errror
 
     char *c=const_cast<char*>(str);
     c[1]=c[2]=' '; //const type이 수정 가능하게 된다
 
-    cout<<"after : "<<str<<endl;
+    std::cout<<"after : "<<str<<std::endl;
 
 }
